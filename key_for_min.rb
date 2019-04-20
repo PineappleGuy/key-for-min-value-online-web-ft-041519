@@ -9,6 +9,6 @@ def key_for_min_value(name_hash)
         youngest_kid = age
       collection = name
       end
-  return name
     end
+    return collection
 end
