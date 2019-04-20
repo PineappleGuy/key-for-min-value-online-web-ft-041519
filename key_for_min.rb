@@ -7,8 +7,8 @@ def key_for_min_value(name_hash)
   name_hash.collect do |name, age|
     if age < youngest_kid
       youngest_kid = age
-      name
     end
+    name
   end
   else
     return nil
