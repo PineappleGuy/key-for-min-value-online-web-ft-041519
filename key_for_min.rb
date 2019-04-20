@@ -9,6 +9,7 @@ def key_for_min_value(name_hash)
       youngest_kid = age
       name
     end
+  end
   else
     return nil
   end
