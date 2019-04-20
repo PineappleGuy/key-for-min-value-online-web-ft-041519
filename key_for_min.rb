@@ -2,6 +2,8 @@
 # Given a hash with numeric values, return the key for the smallest value
 
 def key_for_min_value(name_hash)
+  if block_given?
+
   youngest_kid = 1000
   collection = ""
     name_hash.collect do |name, age|
@@ -11,4 +13,7 @@ def key_for_min_value(name_hash)
       end
     end
     return collection
+  else
+    return nil
+  end
 end
