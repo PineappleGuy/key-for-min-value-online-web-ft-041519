@@ -3,10 +3,12 @@
 
 def key_for_min_value(name_hash)
   youngest_kid = 1000
+  collection = ""
     name_hash.collect do |name, age|
         if age < youngest_kid
         youngest_kid = age
+      collection = name
       end
   return name
-    endbbbb
+    end
 end
